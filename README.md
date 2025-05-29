@@ -199,19 +199,35 @@ Setelah model saya terlatih dan semua "alat" pra-pemrosesan tersimpan, saya memb
 
 ## Detail Model
 
-Di proyek ini, saya mengeksplorasi beberapa algoritma Machine Learning untuk klasifikasi:
-* Logistic Regression
-* Random Forest Classifier
-* Gradient Boosting Classifier
+* **Algoritma yang Digunakan:** Proyek ini mengeksplorasi tiga algoritma klasifikasi:
+    * Logistic Regression
+    * Random Forest Classifier
+    * Gradient Boosting Classifier
+* **Model Terbaik:**
+    Setelah evaluasi dengan *cross-validation*, model **Gradient Boosting Classifier** dipilih sebagai model terbaik untuk deployment. Ini berdasarkan performa **F1 Score** (0.7770) dan juga metrik lain seperti Akurasi dan ROC AUC yang paling tinggi di antara model-model yang diuji.
+* **Metrik Kinerja (Rata-rata Cross-Validation):**
+    Berikut adalah rata-rata metrik kinerja untuk setiap model yang diuji:
 
-Setelah melakukan evaluasi dengan *cross-validation*, model **Random Forest Classifier** menjadi pilihan saya sebagai model terbaik untuk digunakan di API. Saya memilihnya berdasarkan kinerja `F1 Score` yang paling optimal, yang penting untuk masalah klasifikasi seperti ini.
+    **Model: Logistic Regression**
+    * Accuracy: 0.8249
+    * Precision: 0.7895
+    * Recall: 0.7425
+    * F1 Score: 0.7641
+    * ROC AUC: 0.8706
 
-**Berikut adalah rata-rata metrik kinerja model Random Forest (dari *cross-validation*):**
-* Accuracy: [Isi dengan nilai Akurasi rata-rata dari `02_model_training_evaluation.ipynb` Anda]
-* Precision: [Isi dengan nilai Presisi rata-rata dari `02_model_training_evaluation.ipynb` Anda]
-* Recall: [Isi dengan nilai Recall rata-rata dari `02_model_training_evaluation.ipynb` Anda]
-* F1 Score: [Isi dengan nilai F1 Score rata-rata dari `02_model_training_evaluation.ipynb` Anda]
-* ROC AUC: [Isi dengan nilai ROC AUC rata-rata dari `02_model_training_evaluation.ipynb` Anda]
+    **Model: Random Forest**
+    * Accuracy: 0.8103
+    * Precision: 0.7634
+    * Recall: 0.7338
+    * F1 Score: 0.7479
+    * ROC AUC: 0.8749
+
+    **Model: Gradient Boosting (Terbaik)**
+    * Accuracy: 0.8350
+    * Precision: 0.8102
+    * Recall: 0.7485
+    * F1 Score: 0.7770
+    * ROC AUC: 0.8833
 
 ## Pembelajaran & Tantangan
 
