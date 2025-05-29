@@ -14,24 +14,14 @@ Proyek ini adalah hasil dari test case magang AI/ML Developer yang saya ikuti. T
 Saya mencoba mengatur folder proyek ini serapi mungkin agar mudah diikuti dan dipahami. Kira-kira seperti ini tampilannya:
 
 titanic_survival_predictor/
-├── data/                       # Tempat saya menyimpan dataset (mentah dan yang sudah diproses)
-│   ├── raw/                    # Dataset asli yang diunduh dari Kaggle (train.csv, test.csv)
-│   └── processed/              # (Opsional) Kalau ada data yang sudah bersih dan saya simpan terpisah
-├── notebooks/                  # Koleksi Jupyter Notebooks untuk eksperimen dan alur kerja (EDA, pra-pemrosesan, melatih model)
-│   ├── 01_eda_preprocessing.ipynb
-│   └── 02_model_training_evaluation.ipynb
-├── src/                        # Kumpulan skrip Python terpisah untuk fungsi-fungsi penting
-│   └── data_pipeline.py        # Skrip khusus untuk semua tahapan pra-pemrosesan data
-├── models/                     # Tempat menyimpan model ML yang sudah jadi dan "alat" pra-pemrosesan lainnya
-│   ├── best_titanic_model.pkl  # Model Machine Learning terbaik pilihan saya
-│   ├── scaler.pkl              # "Alat" untuk menyamakan skala fitur numerik
-│   └── features_columns.pkl    # Daftar nama kolom fitur yang dipakai model
-├── app/                        # Folder untuk aplikasi API saya
-│   └── main.py                 # Skrip utama aplikasi Flask API
-├── .gitignore                  # File ini memberitahu Git apa saja yang tidak perlu diunggah ke GitHub
-├── README.md                   # Yang sedang Anda baca ini! Deskripsi proyek dan panduannya
-└── requirements.txt            # Daftar semua pustaka Python yang dibutuhkan proyek
-
+|-- app/                            # Folder untuk aplikasi API saya
+|   -- main.py # Skrip utama aplikasi Flask API |-- data/ # Tempat saya menyimpan dataset (mentah dan yang sudah diproses) | |-- raw/ # Dataset asli yang diunduh dari Kaggle (train.csv, test.csv) |-- processed/                  # (Opsional) Kalau ada data yang sudah bersih dan saya simpan terpisah
+|-- models/                         # Tempat menyimpan model ML yang sudah jadi dan "alat" pra-pemrosesan lainnya
+|   |-- best_titanic_model.pkl      # Model Machine Learning terbaik pilihan saya
+|   |-- scaler.pkl                  # "Alat" untuk menyamakan skala fitur numerik
+|   -- features_columns.pkl # Daftar nama kolom fitur yang dipakai model |-- notebooks/ # Koleksi Jupyter Notebooks untuk eksperimen dan alur kerja (EDA, pra-pemrosesan, melatih model) | |-- 01_eda_preprocessing.ipynb |-- 02_model_training_evaluation.ipynb
+|-- src/                            # Kumpulan skrip Python terpisah untuk fungsi-fungsi penting
+|   -- data_pipeline.py # Skrip khusus untuk semua tahapan pra-pemrosesan data |-- .gitignore # File ini memberitahu Git apa saja yang tidak perlu diunggah ke GitHub |-- README.md # Yang sedang Anda baca ini! Deskripsi proyek dan panduannya-- requirements.txt                # Daftar semua pustaka Python yang dibutuhkan proyek
 ## Cara Menjalankan Proyek Ini
 
 Untuk mencoba proyek ini di komputer Anda, ikuti langkah-langkah di bawah ini:
@@ -39,7 +29,7 @@ Untuk mencoba proyek ini di komputer Anda, ikuti langkah-langkah di bawah ini:
 1.  **Kloning Repositori:**
     Buka terminal/Command Prompt Anda dan unduh kode proyek ini:
     ```bash
-    git clone [https://github.com/seaviamutiara/titanic-survival-prediction-ml-internship.git](https://github.com/seaviamutiara/titanic-survival-prediction-ml-internship.git)
+    git clone [https://github.com/seviamutiara/titanic-survival-prediction-ml-internship.git](https://github.com/seviamutiara/titanic-survival-prediction-ml-internship.git)
     cd titanic_survival_predictor
     ```
 
